@@ -1,0 +1,20 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "jest"
+  },
+  "keywords": ["team profile generator","team generator","profile generator","team profile"],
+  "author": "Abdelrahman Ahmed",
+  "license": "MIT",
+  "dependencies": {
+    "email-validator": "^2.0.4",
+    "inquirer": "8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
