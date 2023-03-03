@@ -67,16 +67,14 @@ class Team {
 
     inquirer
       .prompt(managerQuestions)
-      .then((manager) => {
-        console.log(manager);
-        this.teamMembers.push(
-          new Manager(
+        .then((manager) => {
+          let managerInstance = new Manager(
             manager.managerName,
             manager.managerID,
             manager.managerEmail,
             manager.managerOfficeNum
-          )
-        );
+          );
+        this.teamMembers.push(managerInstance);
         this.promptTeamInfo();
       })
       .catch((err) => console.log(err));
@@ -232,9 +230,10 @@ class Team {
             })
             .catch((err) => console.log(err));
         } else {
-          return;
+          return this.teamMembers;
         }
       })
+      .then((members) => console.log(members))
       .catch((err) => console.log(err));
   }
   getTeamInfo() {
@@ -242,7 +241,4 @@ class Team {
   }
 }
 const game = new Team();
-game.promptManagerInfo().then(() => {
-  const team = game.getTeamInfo();
-  console.log(team);
-});
+game.promptManagerInfo();
