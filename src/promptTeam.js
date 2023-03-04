@@ -247,13 +247,15 @@ class Team {
             })
             .catch((err) => console.log(err));
         } else {
-          return;
+          this.getTeamInfo();
         }
       })
       .catch((err) => console.log(err));
-    }
-    // returns the teamMembers array containing class instances of all the members of the team
+  }
+  // returns the teamMembers array containing class instances of all the members of the team
   getTeamInfo() {
+    console.log(this.teamMembers);
     return this.teamMembers;
   }
 }
+module.exports = Team;
