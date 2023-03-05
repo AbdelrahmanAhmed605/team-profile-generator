@@ -41,7 +41,7 @@ describe("Engineer", () => {
   });
 
   describe("getGithub", () => {
-    it("should return the office number of the manager class instance", () => {
+    it("should return the office number of the Engineer class instance", () => {
       const engineer = new Engineer("Abed", "2", "abed@hotmail.com", "AbdelrahmanAhmed605");
       const github = "AbdelrahmanAhmed605";
 
@@ -50,7 +50,7 @@ describe("Engineer", () => {
   });
 
   describe("getRole", () => {
-    it("should return 'Engineer' as the role of the manager class instance", () => {
+    it("should return 'Engineer' as the role of the Engineer class instance", () => {
       const engineer = new Engineer("Abed", "2", "abed@hotmail.com", "AbdelrahmanAhmed605");
 
       expect(engineer.getRole()).toEqual("Engineer");
