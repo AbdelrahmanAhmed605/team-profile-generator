@@ -6,7 +6,8 @@ const { JSDOM } = require("jsdom");
 //teamCards
 function createHTML(teamCards) {
   // Create a new JSDOM instance
-  let dom = new JSDOM(`<!DOCTYPE html>
+    let dom = new JSDOM(`
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -39,7 +40,7 @@ function createHTML(teamCards) {
     document
       .querySelector(".row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4")
       .appendChild(cardColumn);
-    cardColumn.appendChild(memberCard);
+      cardColumn.innerHTML = memberCard;
   });
 
     // Output the JSDOM instance to an html file in the dist folder
