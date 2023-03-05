@@ -11,12 +11,14 @@ function createCards(teamInfo) {
     switch (memberRole) {
       case "Manager":
         const managerCard = `<div class="card">
-  <div class="card-body">
-    <h5 class="card-title">${teamMember.getName()}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">${teamMember.getRole()}</h6>
-    <ul class="list-group list-group-flush">
+  <div class="card-header bg-primary">
+    <h5 class="card-title text-light">${teamMember.getName()}</h5>
+    <h6 class="card-subtitle mb-2 text-light"><i class="fa-solid fa-mug-hot"></i> ${teamMember.getRole()}</h6>
+  </div>
+  <div class="card-body bg-light">
+    <ul class="list-group">
       <li class="list-group-item">ID: ${teamMember.getId()}</li>
-      <li class="list-group-item">Email: ${teamMember.getEmail()}</li>
+      <li class="list-group-item">Email: <a class="text-decoration-none" href="mailto:${teamMember.getEmail()}">${teamMember.getEmail()}</a></li>
       <li class="list-group-item">Office number: ${teamMember.getOfficeNum()}</li>
     </ul>
   </div>
@@ -24,25 +26,29 @@ function createCards(teamInfo) {
         return managerCard;
       case "Engineer":
         const engCard = `<div class="card">
-  <div class="card-body">
-    <h5 class="card-title">${teamMember.getName()}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">${teamMember.getRole()}</h6>
-    <ul class="list-group list-group-flush">
+  <div class="card-header bg-primary">
+    <h5 class="card-title text-light">${teamMember.getName()}</h5>
+    <h6 class="card-subtitle mb-2 text-light"><i class="fa-solid fa-glasses"></i> ${teamMember.getRole()}</h6>
+  </div>
+  <div class="card-body bg-light">
+    <ul class="list-group">
       <li class="list-group-item">ID: ${teamMember.getId()}</li>
-      <li class="list-group-item">Email: ${teamMember.getEmail()}</li>
-      <li class="list-group-item">Github: <a href="https://github.com/${teamMember.getGithub()}">${teamMember.getGithub()}</a></li>
+      <li class="list-group-item">Email: <a class="text-decoration-none" href="mailto:${teamMember.getEmail()}">${teamMember.getEmail()}</a></li>
+      <li class="list-group-item">Github: <a class="text-decoration-none" target="_blank" href="https://github.com/${teamMember.getGithub()}">${teamMember.getGithub()}</a></li>
     </ul>
   </div>
 </div>`;
         return engCard;
       case "Intern":
         const internCard = `<div class="card">
-  <div class="card-body">
-    <h5 class="card-title">${teamMember.getName()}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">${teamMember.getRole()}</h6>
-    <ul class="list-group list-group-flush">
+  <div class="card-header bg-primary">
+    <h5 class="card-title text-light">${teamMember.getName()}</h5>
+    <h6 class="card-subtitle mb-2 text-light"><i class="fa-solid fa-user-graduate"></i> ${teamMember.getRole()}</h6>
+  </div>
+  <div class="card-body bg-light">
+    <ul class="list-group">
       <li class="list-group-item">ID: ${teamMember.getId()}</li>
-      <li class="list-group-item">Email: ${teamMember.getEmail()}</li>
+      <li class="list-group-item">Email: <a class="text-decoration-none" href="mailto:${teamMember.getEmail()}">${teamMember.getEmail()}</a></li>
       <li class="list-group-item">School: ${teamMember.getSchool()}</li>
     </ul>
   </div>

@@ -19,14 +19,15 @@ function createHTML(teamCards) {
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
         crossorigin="anonymous"
         />
+        <script src="https://kit.fontawesome.com/535eb997cb.js" crossorigin="anonymous"></script>
         <title>Team Profile</title>
     </head>
-    <body>
-        <header class="text-center p-3 mb-2">
-            <h1 class="display-3">My Team</h1>
+    <body
+        <header class="text-center p-3 mb-2 bg-danger">
+            <h1 class="display-3 text-light">My Team</h1>
         </header>
         <div class="container-fluid px-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-auto">
             </div>
         </div>
     </body>
@@ -36,7 +37,7 @@ function createHTML(teamCards) {
   //Create a bootstrap column div element for each card and append the card to it
   teamCards.forEach((memberCard) => {
     const cardColumn = document.createElement("div");
-    cardColumn.className = "col";
+    cardColumn.className = "col mx-auto";
     document
       .querySelector(".row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4")
       .appendChild(cardColumn);
