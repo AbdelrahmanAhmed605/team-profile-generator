@@ -2,9 +2,12 @@
 const inquirer = require("inquirer");
 const emailValidator = require("email-validator");
 // Import classes
-const Engineer = require("./../lib/Engineer");
-const Intern = require("./../lib/Intern");
-const Manager = require("./../lib/Manager");
+const Engineer = require("../lib/Engineer");
+const Intern = require("../lib/Intern");
+const Manager = require("../lib/Manager");
+// Import functions to create Bootstrap5 cards for team members and place them in an html file
+const createTeamCards = require("./createTeamCards");
+const createTeamHTML = require("./creatTeamHTML");
 
 // Team class which has methods to prompt the user for the team members and creates class (Manager, Eng, Intern)
 // instances using the given information. Instances of all the members are places into the Team class' constructor
@@ -13,6 +16,8 @@ class Team {
   constructor() {
     // contains all members of the team for the specific Team instance
     this.teamMembers = [];
+    //contains bootstrap cards for each member of the team
+    this.teamCards = [];
   }
 
   // Prompts the user for the manager's information and creates a Manager class instance with the given
@@ -247,15 +252,24 @@ class Team {
             })
             .catch((err) => console.log(err));
         } else {
-          this.getTeamInfo();
+          this.createTeamCards();
+          this.createTeamHTML();
+          //this.getTeamInfo();
         }
       })
       .catch((err) => console.log(err));
   }
   // returns the teamMembers array containing class instances of all the members of the team
   getTeamInfo() {
-    console.log(this.teamMembers);
     return this.teamMembers;
+  }
+
+  createTeamCards() {
+    this.teamCards = createTeamCards(this.teamMembers);
+  }
+
+  createTeamHTML() {
+    createTeamHTML(this.teamCards);
   }
 }
 module.exports = Team;

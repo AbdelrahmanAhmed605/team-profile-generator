@@ -25,12 +25,12 @@ function createCards(teamInfo) {
       case "Engineer":
         const engCard = `<div class="card">
   <div class="card-body">
-    <h5 class="card-title">${member.getName()}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">${member.getRole()}</h6>
+    <h5 class="card-title">${teamMember.getName()}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">${teamMember.getRole()}</h6>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">ID: ${member.getId()}</li>
-      <li class="list-group-item">Email: ${member.getEmail()}</li>
-      <li class="list-group-item">Github: <a href="https://github.com/${member.getGithub()}">${member.getGithub()}</a></li>
+      <li class="list-group-item">ID: ${teamMember.getId()}</li>
+      <li class="list-group-item">Email: ${teamMember.getEmail()}</li>
+      <li class="list-group-item">Github: <a href="https://github.com/${teamMember.getGithub()}">${teamMember.getGithub()}</a></li>
     </ul>
   </div>
 </div>`;
@@ -38,12 +38,12 @@ function createCards(teamInfo) {
       case "Intern":
         const internCard = `<div class="card">
   <div class="card-body">
-    <h5 class="card-title">${member.getName()}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">${member.getRole()}</h6>
+    <h5 class="card-title">${teamMember.getName()}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">${teamMember.getRole()}</h6>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">ID: ${member.getId()}</li>
-      <li class="list-group-item">Email: ${member.getEmail()}</li>
-      <li class="list-group-item">School: ${member.getSchool()}</li>
+      <li class="list-group-item">ID: ${teamMember.getId()}</li>
+      <li class="list-group-item">Email: ${teamMember.getEmail()}</li>
+      <li class="list-group-item">School: ${teamMember.getSchool()}</li>
     </ul>
   </div>
 </div>`;
