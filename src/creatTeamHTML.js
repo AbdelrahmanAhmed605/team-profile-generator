@@ -22,7 +22,7 @@ function createHTML(teamCards) {
         <script src="https://kit.fontawesome.com/535eb997cb.js" crossorigin="anonymous"></script>
         <title>Team Profile</title>
     </head>
-    <body
+    <body>
         <header class="text-center p-3 mb-2 bg-danger">
             <h1 class="display-3 text-light">My Team</h1>
         </header>
