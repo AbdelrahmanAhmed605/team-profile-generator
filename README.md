@@ -4,7 +4,12 @@
 
 ## Description
 
-A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person 
+A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. The inquirer prompts ask the user to enter the team's information which is then displayed as bootstrap cards on the HTML webpage. During this project, Abdelrahman learnt the following skills:
+- Creating classes and extending them to their children
+- Creating constructors and methods for classes
+- Adding validation checks on class constructors to ensure appropriate information is passed to the class instances
+- Using jest module to create tests for applications
+- Creating tests that check for errors using jest's toThrowError method
 
 ## Table of Contents
 
@@ -17,7 +22,7 @@ A Node.js command-line application that takes in information about employees on 
 
 ## Installation
 
-As the project does not use publishing softwares like Heroku and is only availabe in the command line, the user will have to install the inquirer and email-validator packages. To install these packages, the user must run these commands in the terminal before running the application: `npm i inquirer@8.2.4` and `npm i inquirer@8.2.4`. Please ensure you are in the project directory when installing these packages.
+As the project does not use publishing softwares like Heroku and is only availabe in the command line, the user will have to install the inquirer and email-validator packages. To install these packages, the user must run these commands in the terminal before running the application: `npm i inquirer@8.2.4` and `npm i email-validator`. Please ensure you are in the project directory when installing these packages.
 
 ## Usage
 
