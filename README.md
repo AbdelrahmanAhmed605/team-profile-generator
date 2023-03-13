@@ -44,5 +44,5 @@ There is an Employee class containing 3 sub-classes (Manager, Engineer, Intern).
 
 ## Questions
 
-If you have any questions regarding this application, feel free to reach me at abdelrahman.ahmed605@hotmail.com with the subject title "Question for Professional-readme-generator"
+If you have any questions regarding this application, feel free to reach me at abdelrahman.ahmed605@hotmail.com with the subject title "Questions for Team Porfile Generator Application"
 You can also find me on github here: https://github.com/AbdelrahmanAhmed605
