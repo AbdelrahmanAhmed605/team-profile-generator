@@ -26,9 +26,9 @@ As the project does not use publishing softwares like Heroku and is only availab
 
 ## Usage
 
-For a walkthrough of how to use the application, refer to the following demonstration:
+For a walkthrough of how to use the application, refer to the following demonstration: https://watch.screencastify.com/v/StEMPzhmNfOWXeeHaaqC
 
-Once the packages are installed, to run the application, the user must type node index in the terminal. This will then generate a sequence of prompts requesting information regarding the Manager's information.  Once all the prompts have been completed, the user will be presented with the option to add an Engineer or Intern to the team or confirm that the team has been completed. The user will be able to add as many Engineers and Interns to the team until they confirm their team is complete. When the user confirms the completion of the team, an index.html file will be created in the `dist` folder. The user can then open up the html file on their web browser where they will see all the inputted team member's information presented.
+Once the packages are installed, to run the application, the user must type `node index` in the terminal. This will then generate a sequence of prompts requesting information regarding the Manager's information.  Once all the prompts have been completed, the user will be presented with the option to add an Engineer or Intern to the team or confirm that the team has been completed. The user will be able to add as many Engineers and Interns to the team until they confirm their team is complete. When the user confirms the completion of the team, an index.html file will be created in the `dist` folder. The user can then open up the html file on their web browser where they will see all the inputted team member's information presented.
 
 ## License
 
@@ -44,5 +44,5 @@ There is an Employee class containing 3 sub-classes (Manager, Engineer, Intern).
 
 ## Questions
 
-If you have any questions regarding this application, feel free to reach me at abdelrahman.ahmed605@hotmail.com with the subject title "Question for Professional-readme-generator"
+If you have any questions regarding this application, feel free to reach me at abdelrahman.ahmed605@hotmail.com with the subject title "Questions for Team Porfile Generator Application"
 You can also find me on github here: https://github.com/AbdelrahmanAhmed605
