@@ -4,6 +4,8 @@
 
 ## Description
 
+![image](assets/team-profile-generator.png)
+
 A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. The inquirer prompts ask the user to enter the team's information which is then displayed as bootstrap cards on the HTML webpage. During this project, Abdelrahman learnt the following skills:
 - Creating classes and extending them to their children
 - Creating constructors and methods for classes
